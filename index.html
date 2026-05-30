@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, viewport-fit=cover">
+    <meta name="description" content="Official professional profile of RHK SIAM – Elite Free Fire esports athlete, former key player of Team RHK (Red Hawks), Bangladesh. UID: 6979366392. View career stats, achievements and match history.">
+    <meta name="keywords" content="RHK SIAM, Team RHK, Red Hawks, Free Fire, Bangladesh Esports, UID 6979366392, RHK Esports, Professional Player, FFBC, Esports World Cup">
+    <meta name="author" content="RHK Esports">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="RHK SIAM | Pro Free Fire Athlete | Team RHK">
+    <meta property="og:description" content="Official portfolio of RHK SIAM – UID: 6979366392. Bangladesh esports talent, former Red Hawks star.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630?text=RHK+SIAM+Pro">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://rhkesports.com/player/rhk-siam">
+    
+    <title>RHK SIAM | Pro Esports Athlete | Team RHK</title>
+    
+    <!-- Google Fonts + Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #0A0C10;
+            font-family: 'Inter', sans-serif;
+            color: #EDF2F8;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        /* Custom Scroll */
+        ::-webkit-scrollbar { width: 5px; }
+        ::-webkit-scrollbar-track { background: #141824; }
+        ::-webkit-scrollbar-thumb { background: #E11D48; border-radius: 10px; }
+
+        /* Professional RHK Color Scheme */
+        :root {
+            --primary: #E11D48;
+            --primary-dark: #BE123C;
+            --primary-glow: rgba(225, 29, 72, 0.3);
+            --bg-dark: #0A0C10;
+            --bg-card: #11141C;
+            --bg-elevated: #161A24;
+            --border-dim: #252A36;
+            --text-muted: #9CA3CF;
+        }
+
+        /* Navigation */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+            background: rgba(10, 12, 16, 0.96);
+            backdrop-filter: blur(12px);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid rgba(225, 29, 72, 0.25);
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .logo h2 {
+            font-family: 'Orbitron', monospace;
+            font-weight: 700;
+            font-size: 1.5rem;
+            letter-spacing: -0.5px;
+        }
+        .logo .rhk {
+            color: var(--primary);
+            text-shadow: 0 0 6px var(--primary-glow);
+        }
+        .logo span {
+            font-size: 0.7rem;
+            display: block;
+            color: var(--text-muted);
+            letter-spacing: 0.5px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        .nav-links a {
+            color: #E2E8F0;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: 0.2s;
+            letter-spacing: 0.3px;
+        }
+        .nav-links a:hover { color: var(--primary); }
+
+        /* Buttons */
+        .btn-primary, .btn-outline {
+            padding: 0.7rem 1.6rem;
+            border-radius: 40px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            transition: all 0.25s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+            border: none;
+            box-shadow: 0 4px 12px rgba(225, 29, 72, 0.3);
+        }
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(225, 29, 72, 0.4);
+        }
+        .btn-outline {
+            border: 1.5px solid var(--primary);
+            background: transparent;
+            color: #F1F5F9;
+        }
+        .btn-outline:hover {
+            background: rgba(225, 29, 72, 0.1);
+            border-color: var(--primary);
+            transform: translateY(-2px);
+        }
+
+        /* Hero Section - Fully Responsive */
+        .hero {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            padding: 3rem 5%;
+            gap: 2rem;
+            min-height: 85vh;
+        }
+        .hero-content {
+            flex: 1.2;
+            min-width: 260px;
+        }
+        .hero-badge {
+            background: rgba(225, 29, 72, 0.12);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 0.4rem 1.2rem;
+            border-radius: 40px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            border-left: 3px solid var(--primary);
+            margin-bottom: 1.2rem;
+        }
+        .hero-content h1 {
+            font-size: clamp(2.2rem, 6vw, 3.8rem);
+            font-family: 'Orbitron', monospace;
+            font-weight: 800;
+            line-height: 1.2;
+        }
+        .hero-content h1 .highlight { color: var(--primary); }
+        .uid-container {
+            background: var(--bg-card);
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 0.5rem 1.2rem;
+            border-radius: 60px;
+            margin: 1rem 0;
+            border: 1px solid var(--border-dim);
+            font-family: monospace;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        .hero-content p {
+            font-size: 1rem;
+            color: var(--text-muted);
+            line-height: 1.5;
+            margin: 1rem 0;
+            max-width: 550px;
+        }
+        .hero-image {
+            flex: 0.9;
+            display: flex;
+            justify-content: center;
+        }
+        .player-avatar {
+            width: 100%;
+            max-width: 300px;
+            aspect-ratio: 1 / 1;
+            background: linear-gradient(145deg, #161A26, #0C0F16);
+            border-radius: 38% 62% 45% 55% / 68% 40% 60% 32%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 3px solid var(--primary);
+            box-shadow: 0 20px 35px -12px rgba(0,0,0,0.6), 0 0 0 4px rgba(225,29,72,0.2);
+        }
+        .player-avatar i {
+            font-size: clamp(4rem, 12vw, 7rem);
+            color: var(--primary);
+            filter: drop-shadow(0 0 12px var(--primary));
+        }
+
+        /* Stats Grid */
+        .stats-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+            padding: 2rem 5%;
+            background: var(--bg-dark);
+            border-top: 1px solid var(--border-dim);
+            border-bottom: 1px solid var(--border-dim);
+        }
+        .stat-card {
+            background: var(--bg-card);
+            padding: 1.2rem 1.8rem;
+            border-radius: 28px;
+            text-align: center;
+            min-width: 130px;
+            flex: 1 0 auto;
+            max-width: 180px;
+            transition: 0.2s;
+            border: 1px solid var(--border-dim);
+        }
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 800;
+            font-family: 'Orbitron', monospace;
+            color: var(--primary);
+        }
+        .stat-label {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+        }
+
+        /* Section */
+        .section {
+            padding: 4rem 5%;
+        }
+        .section-title {
+            font-size: clamp(1.5rem, 4vw, 2rem);
+            font-family: 'Orbitron', monospace;
+            margin-bottom: 2rem;
+            display: inline-block;
+            border-left: 4px solid var(--primary);
+            padding-left: 1rem;
+        }
+
+        /* About Grid */
+        .about-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        .about-text {
+            flex: 1.5;
+            line-height: 1.6;
+            color: #CBD5E1;
+        }
+        .info-panel {
+            flex: 1;
+            background: var(--bg-card);
+            padding: 1.5rem;
+            border-radius: 28px;
+            border: 1px solid var(--border-dim);
+        }
+        .info-row {
+            display: flex;
+            gap: 1rem;
+            padding: 0.8rem 0;
+            border-bottom: 1px dashed var(--border-dim);
+            align-items: center;
+        }
+        .info-row i {
+            width: 28px;
+            color: var(--primary);
+            font-size: 1.1rem;
+        }
+        .info-row strong {
+            font-weight: 600;
+            min-width: 100px;
+        }
+
+        /* Matches / Highlights */
+        .matches-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        .match-card {
+            background: var(--bg-card);
+            border-radius: 24px;
+            padding: 1.5rem;
+            transition: 0.25s;
+            border: 1px solid var(--border-dim);
+        }
+        .match-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+            box-shadow: 0 10px 25px -10px rgba(0,0,0,0.5);
+        }
+        .tourney {
+            font-size: 0.7rem;
+            color: var(--primary);
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+        .score {
+            font-size: 1.5rem;
+            font-weight: 800;
+            font-family: 'Orbitron', monospace;
+            margin: 0.5rem 0;
+        }
+        .mvp-tag {
+            background: rgba(225, 29, 72, 0.15);
+            display: inline-block;
+            padding: 0.2rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.7rem;
+            font-weight: 600;
+        }
+
+        /* Career Timeline */
+        .timeline-flex {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+        .timeline-item {
+            background: var(--bg-elevated);
+            flex: 1;
+            padding: 1.2rem;
+            border-radius: 20px;
+            border-left: 3px solid var(--primary);
+        }
+
+        /* Social Icons */
+        .social-wrap {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin: 1.5rem 0;
+            flex-wrap: wrap;
+        }
+        .social-icon {
+            background: var(--bg-card);
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+            transition: 0.2s;
+            color: #CBD5E1;
+            text-decoration: none;
+            border: 1px solid var(--border-dim);
+        }
+        .social-icon:hover {
+            background: var(--primary);
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 5%;
+            font-size: 0.75rem;
+            border-top: 1px solid var(--border-dim);
+            color: var(--text-muted);
+        }
+
+        /* Responsive Fixes */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                text-align: center;
+            }
+            .nav-links {
+                justify-content: center;
+                gap: 1.2rem;
+            }
+            .hero {
+                text-align: center;
+                padding: 2rem 5%;
+            }
+            .hero-content p {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .uid-container {
+                justify-content: center;
+            }
+            .btn-group {
+                justify-content: center;
+            }
+            .section {
+                padding: 3rem 5%;
+            }
+            .info-row strong {
+                min-width: 80px;
+                font-size: 0.85rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .stat-card {
+                padding: 0.8rem 1rem;
+                min-width: 110px;
+            }
+            .stat-number {
+                font-size: 1.5rem;
+            }
+            .matches-container {
+                grid-template-columns: 1fr;
+            }
+            .btn-primary, .btn-outline {
+                padding: 0.5rem 1.2rem;
+                font-size: 0.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar">
+    <div class="logo">
+        <h2><span class="rhk">RHK</span> SIAM</h2>
+        <span>PRO ATHLETE · TEAM RHK</span>
+    </div>
+    <div class="nav-links">
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#career">CAREER</a>
+        <a href="#highlights">HIGHLIGHTS</a>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="hero-content">
+        <div class="hero-badge">
+            <i class="fas fa-crown"></i> TEAM RHK · BANGLADESH ESPORTS
+        </div>
+        <h1>RHK <span class="highlight">SIAM</span><br>Elite Fragger</h1>
+        <div class="uid-container">
+            <i class="fas fa-id-card"></i> UID: 6979366392
+            <i class="fas fa-check-circle" style="color: #22c55e; font-size: 0.8rem;"></i>
+        </div>
+        <p>Professional Free Fire competitor, former star player of <strong>Red Hawks (RHK)</strong> — the legendary Bangladeshi squad that made history at the <strong>Esports World Cup 2025</strong> and dominated the <strong>Free Fire Bangladesh Championship</strong>.</p>
+        <div class="btn-group">
+            <a href="#about" class="btn-primary"><i class="fas fa-user-astronaut"></i> Profile</a>
+            <a href="#career" class="btn-outline"><i class="fas fa-chart-line"></i> Statistics</a>
+        </div>
+    </div>
+    <div class="hero-image">
+        <div class="player-avatar">
+            <i class="fas fa-mask"></i>
+        </div>
+    </div>
+</section>
+
+<!-- Stats Section -->
+<div class="stats-grid">
+    <div class="stat-card"><div class="stat-number">27+</div><div class="stat-label">Tournament Wins</div></div>
+    <div class="stat-card"><div class="stat-number">843</div><div class="stat-label">Total Kills</div></div>
+    <div class="stat-card"><div class="stat-number">8</div><div class="stat-label">MVP Awards</div></div>
+    <div class="stat-card"><div class="stat-number">#1</div><div class="stat-label">BD EWC Qualifier</div></div>
+</div>
+
+<!-- About Section -->
+<section id="about" class="section">
+    <h2 class="section-title">Professional Identity</h2>
+    <div class="about-grid">
+        <div class="about-text">
+            <p><strong>RHK SIAM</strong> (UID: 6979366392) established himself as one of the most consistent performers in the Bangladesh Free Fire circuit. Known for his sharp game sense and calm demeanor under pressure, SIAM was a vital asset for <strong>Team RHK (Red Hawks)</strong> during their golden era.</p>
+            <p>Playing alongside esports icons like <strong>RHK Kuttush</strong> and <strong>Nejad</strong>, SIAM helped secure the <strong>Free Fire Bangladesh Championship (FFBC) 2025</strong> title and became the first Bangladeshi player to compete on the global stage at the <strong>Esports World Cup 2025 in Riyadh</strong>. Even after RHK's disbandment in April 2026, his legacy continues to inspire upcoming talents.</p>
+            <div style="margin-top: 1.2rem; background: var(--bg-elevated); padding: 1rem; border-radius: 20px;">
+                <i class="fas fa-quote-left" style="color: var(--primary); margin-right: 8px;"></i> “RHK gave Bangladesh a new identity in esports. I’m proud to have bled for the Red Hawks.”
+            </div>
+        </div>
+        <div class="info-panel">
+            <div class="info-row"><i class="fas fa-user-tag"></i><strong>Full Name:</strong> RHK SIAM</div>
+            <div class="info-row"><i class="fas fa-id-card"></i><strong>UID:</strong> 6979366392</div>
+            <div class="info-row"><i class="fas fa-flag-checkered"></i><strong>Team:</strong> Red Hawks (RHK) / Former</div>
+            <div class="info-row"><i class="fas fa-calendar-alt"></i><strong>Active:</strong> 2022 – 2026</div>
+            <div class="info-row"><i class="fas fa-crosshairs"></i><strong>Role:</strong> Entry Fragger / Support</div>
+            <div class="info-row"><i class="fas fa-trophy"></i><strong>Peak Achievement:</strong> Esports World Cup 2025</div>
+        </div>
+    </div>
+</section>
+
+<!-- Career Matches -->
+<section id="career" class="section">
+    <h2 class="section-title">🏆 Recent Dominations</h2>
+    <div class="matches-container">
+        <div class="match-card">
+            <div class="tourney"><i class="far fa-calendar-alt"></i> FFBC 2025 · FINALS</div>
+            <div class="score">RHK 7 - 0 LEGION</div>
+            <p>Clean sweep in the grand finals. SIAM recorded 14 kills across the series, securing the championship and EWC ticket.</p>
+            <div class="mvp-tag"><i class="fas fa-star"></i> MVP · SIAM</div>
+        </div>
+        <div class="match-card">
+            <div class="tourney"><i class="far fa-calendar-alt"></i> EWC 2025 · GROUP STAGE</div>
+            <div class="score">RHK vs. GLOBAL ELITE</div>
+            <p>Historic debut for Bangladesh. SIAM’s 1v3 clutch went viral, earning international recognition.</p>
+            <div class="mvp-tag"><i class="fas fa-fire"></i> Clutch of the tournament</div>
+        </div>
+        <div class="match-card">
+            <div class="tourney"><i class="far fa-calendar-alt"></i> SEA CUP 2024</div>
+            <div class="score">RHK 4 - 2 NSE</div>
+            <p>Back-to-back victories in the regional finals; SIAM averaged 9.2 KDA.</p>
+            <div class="mvp-tag"><i class="fas fa-crown"></i> All-Star Player</div>
+        </div>
+    </div>
+</section>
+
+<!-- RHK Legacy & Milestones -->
+<section id="highlights" class="section" style="background: #0C0F16;">
+    <h2 class="section-title">Red Hawks Legacy</h2>
+    <div class="timeline-flex">
+        <div class="timeline-item">
+            <i class="fas fa-globe-asia" style="color: var(--primary); font-size: 1.4rem;"></i>
+            <h3 style="margin: 10px 0 5px;">🇸🇦 Esports World Cup 2025</h3>
+            <p>First Bangladeshi team to qualify directly. RHK represented Bangladesh on the global stage.</p>
+        </div>
+        <div class="timeline-item">
+            <i class="fas fa-champions" style="color: var(--primary); font-size: 1.4rem;"></i>
+            <h3 style="margin: 10px 0 5px;">🏅 FFBC Champions</h3>
+            <p>Undisputed national champions, back-to-back titles and record viewership.</p>
+        </div>
+        <div class="timeline-item">
+            <i class="fas fa-exchange-alt" style="color: var(--primary); font-size: 1.4rem;"></i>
+            <h3 style="margin: 10px 0 5px;">RHK Disbandment → TEC</h3>
+            <p>April 2026: Red Hawks roster transitioned to The Executive Club (TEC), legacy lives on.</p>
+        </div>
+    </div>
+    <div style="background: var(--bg-card); border-radius: 24px; padding: 1rem 1.5rem; margin-top: 1rem; text-align: center;">
+        <p><strong>RHK Full Form:</strong> RED HAWKS — A symbol of Bangladeshi esports excellence. #WeBelieveInDomination</p>
+    </div>
+</section>
+
+<!-- Social + Footer -->
+<div class="social-wrap">
+    <a href="#" class="social-icon"><i class="fab fa-twitch"></i></a>
+    <a href="#" class="social-icon"><i class="fab fa-discord"></i></a>
+    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+    <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+</div>
+
+<footer>
+    <p>© 2026 RHK SIAM — Official Player Portfolio. UID: 6979366392 | Team RHK (Red Hawks) · Bangladesh Esports Archive</p>
+    <p style="margin-top: 8px;">SEO: RHK Free Fire, Red Hawks Esports Bangladesh, Team RHK, RHK SIAM UID, Esports World Cup 2025, Free Fire Bangladesh Championship</p>
+</footer>
+
+<script>
+    // Smooth scrolling + active link highlight & responsive touches
+    document.querySelectorAll('.nav-links a, .btn-primary, .btn-outline').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            const href = this.getAttribute('href');
+            if (href && href.startsWith('#')) {
+                e.preventDefault();
+                const targetId = href.substring(1);
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            }
+        });
+    });
+</script>
+</body>
+  </html>
